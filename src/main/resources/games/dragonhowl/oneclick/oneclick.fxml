@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="pane" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="800.0" style="-fx-padding: 0;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="games.dragonhowl.oneclick.OneClick">
+   <children>
+      <Button id="fileChooserButton" fx:id="fileChooserButton" onAction="#onFileChooserButtonClick" text="Select Install Path">
+         <VBox.margin>
+            <Insets top="276.0" />
+         </VBox.margin></Button>
+
+      <Label fx:id="progressText" />
+      <ProgressBar id="progressBar" fx:id="progressBar" prefHeight="4" prefWidth="800.0" progress="0.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin></ProgressBar>
+
+      <Button fx:id="installButton" onAction="#onInstallButtonClick" text="Install">
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin></Button>
+   </children>
+</VBox>

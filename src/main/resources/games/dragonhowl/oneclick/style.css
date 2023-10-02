@@ -1,0 +1,44 @@
+#pane{
+    -fx-padding: 0;
+    -fx-background-image: url("background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: cover;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+.button {
+    -fx-background-color: #ddb371; /* Button background color */
+    -fx-text-fill: #ffffff; /* Text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-weight: bold; /* Font weight */
+    -fx-padding: 10px 20px; /* Padding around the text */
+    -fx-border-radius: 10px; /* Border radius to make it rounded */
+}
+
+.button:hover {
+    -fx-background-color: #d8ab6d; /* Background color on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #c48c5a; /* Background color when pressed */
+}
+
+#progressBar {
+    -fx-padding: 0;
+    -fx-accent: #ff6ca1;
+}
+
+#progressBar .bar {
+    -fx-padding: 1px;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+#progressBar > .track {
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-text-box-border: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-background-color: rgba(255, 255, 255, 0);
+}
